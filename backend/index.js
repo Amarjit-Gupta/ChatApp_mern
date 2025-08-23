@@ -41,6 +41,18 @@ io.on("connection", (socket) => {
         }
     });
 
+    // to delete all data
+    app.delete("/del", async (req, res) => {
+    try {
+        let data = await Chat.deleteMany({});
+       // console.log(data);
+        res.send(data);
+    }
+    catch (err) {
+        console.log(err);
+    }
+});
+
     socket.on("disconnect", () => {
         console.log("User disconnected", socket.id);
     });
