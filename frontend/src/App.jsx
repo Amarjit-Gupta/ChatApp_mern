@@ -7,7 +7,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 1500);
+    }, 500);
   }, []);
 
   return (
