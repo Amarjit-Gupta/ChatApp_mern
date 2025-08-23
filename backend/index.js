@@ -41,7 +41,7 @@ io.on("connection", (socket) => {
         }
     });
 
-    // to delete all data
+    // to delete all data (https://chatapp-backend-z71v.onrender.com/del)
     app.delete("/del", async (req, res) => {
     try {
         let data = await Chat.deleteMany({});
