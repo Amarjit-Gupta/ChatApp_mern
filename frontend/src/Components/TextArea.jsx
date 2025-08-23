@@ -25,7 +25,7 @@ const TextArea = ({ addMessage }) => {
         name="message"
         id="message"
         rows="7"
-        placeholder="Enter message here..."
+        placeholder="Enter message..."
         onChange={(e) => setMessage(e.target.value)}
         value={message}
       ></textarea>
