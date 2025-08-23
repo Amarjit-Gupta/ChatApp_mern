@@ -10,7 +10,7 @@
 }
 
 .user {
-  height: 100vh;
+  height: 100dvh;
   background-color: rgb(208, 229, 208);
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .user-child {
-  height: 325px;
+  height: 340px;
   width: 350px;
   padding: 8px;
   border: rgb(158, 158, 158) solid 2px;
