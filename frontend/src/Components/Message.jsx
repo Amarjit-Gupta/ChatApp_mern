@@ -12,7 +12,7 @@ const Message = ({ chats }) => {
   // console.log(chats);
 
   return (
-    <div className='list'>
+    <div className='list no-scrollbar'>
       {chats.map((chat, index) => {
         return (
           chat.username === user ? (
