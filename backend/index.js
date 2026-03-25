@@ -102,7 +102,7 @@ io.on("connection", (socket) => {
             if (!msg || !msg?.text || !msg?.join) return;
             const newMessage = new Chat(msg);
             await newMessage.save();
-            io.to(msg.join).emit('message', newMessage);
+            io.to(msg.join).emit('message', msg);
 
         } catch (err) {
             console.error("Error saving message:", err);
